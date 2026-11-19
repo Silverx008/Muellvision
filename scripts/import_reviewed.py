@@ -11,7 +11,6 @@ import shutil
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv.data.labelstudio import check_classes
 from mv.paths import data_root
 

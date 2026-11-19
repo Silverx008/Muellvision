@@ -9,7 +9,6 @@ import csv
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv.bench import benchmark
 from mv.explog import device_name
 from mv.paths import RESULTS

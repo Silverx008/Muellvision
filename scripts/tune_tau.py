@@ -7,9 +7,9 @@ import argparse
 import csv
 from pathlib import Path
 
-import _bootstrap  # noqa: F401
 import numpy as np
 
+import _bootstrap  # noqa: F401
 from mv.data.yolo import label_path, read_labels
 from mv.paths import RESULTS, SPLITS, data_root, runs_root
 from mv.residual import choose_tau, match_image, sweep

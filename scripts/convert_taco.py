@@ -6,7 +6,6 @@
 import argparse
 
 import _bootstrap  # noqa: F401
-
 from mv.config import class_names
 from mv.data.taco import convert
 from mv.paths import data_root

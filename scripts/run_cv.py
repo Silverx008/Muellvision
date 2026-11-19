@@ -10,7 +10,6 @@ import sys
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv.config import load_yaml
 from mv.paths import CONFIGS
 from mv.train import is_finished, run_name

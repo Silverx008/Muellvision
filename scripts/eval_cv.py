@@ -6,9 +6,9 @@
 import argparse
 import csv
 
-import _bootstrap  # noqa: F401
 import numpy as np
 
+import _bootstrap  # noqa: F401
 from mv.config import load_yaml
 from mv.evaluate import validate
 from mv.paths import CONFIGS, RESULTS, SPLITS, runs_root

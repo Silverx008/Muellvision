@@ -9,7 +9,6 @@ Runs on CPU (~0.5 s/image on the laptop) or much faster on Colab. Then review in
 import argparse
 
 import _bootstrap  # noqa: F401
-
 from mv.data.prelabel import prelabel_all
 from mv.paths import data_root
 

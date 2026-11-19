@@ -7,7 +7,6 @@ Then compare FP32@640, FP32@320 and INT8@320 on the same val data (scripts/eval_
 import argparse
 
 import _bootstrap  # noqa: F401
-
 from mv.splits import materialize
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)

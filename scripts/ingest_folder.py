@@ -7,7 +7,6 @@ import argparse
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv.data.folder import ingest
 from mv.paths import data_root
 

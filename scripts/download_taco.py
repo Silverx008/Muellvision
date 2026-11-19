@@ -6,7 +6,6 @@
 import argparse
 
 import _bootstrap  # noqa: F401
-
 from mv.data.taco import download
 from mv.paths import data_root
 

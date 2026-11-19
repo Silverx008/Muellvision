@@ -10,7 +10,6 @@ import csv
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv import explog
 from mv.evaluate import validate
 from mv.paths import CONFIGS, RESULTS

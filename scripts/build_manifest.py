@@ -7,7 +7,6 @@ import argparse
 from collections import Counter
 
 import _bootstrap  # noqa: F401
-
 from mv.data import manifest
 from mv.paths import MANIFEST, data_root
 

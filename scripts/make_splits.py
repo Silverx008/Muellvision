@@ -7,7 +7,6 @@
 import argparse
 
 import _bootstrap  # noqa: F401
-
 from mv.data import manifest
 from mv.paths import MANIFEST, SPLITS
 from mv.splits import make_splits, write_splits

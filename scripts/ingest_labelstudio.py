@@ -8,7 +8,6 @@ import re
 from pathlib import Path
 
 import _bootstrap  # noqa: F401
-
 from mv.data.labelstudio import ingest_series
 from mv.paths import data_root
 

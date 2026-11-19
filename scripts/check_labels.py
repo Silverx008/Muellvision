@@ -6,7 +6,6 @@
 import sys
 
 import _bootstrap  # noqa: F401
-
 from mv.config import class_names
 from mv.data import manifest
 from mv.data.checks import check_rows

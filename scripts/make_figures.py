@@ -3,9 +3,9 @@
   python scripts/make_figures.py
 """
 
-import _bootstrap  # noqa: F401
 import pandas as pd
 
+import _bootstrap  # noqa: F401
 from mv.paths import RESULTS
 
 FIG = RESULTS / "figures"
