@@ -1,0 +1,6 @@
+# Arduino Uno Q (Linux side, Debian aarch64). Verify on the board during E1, then pin exact versions.
+ultralytics==8.4.200
+ncnn
+opencv-python-headless
+numpy
+PyYAML

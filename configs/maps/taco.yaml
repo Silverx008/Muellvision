@@ -1,0 +1,25 @@
+# TACO category name -> Müllvision class. Categories not listed are dropped (their boxes are removed; the
+# object stays in the image unlabelled, like any other Störstoff). An image whose objects are all unmapped is
+# kept as a background image (empty label file). Review against the TACO category list.
+map:
+  Clear plastic bottle: pet_bottle
+  Other plastic bottle: pet_bottle
+  Plastic film: plastic_film
+  Garbage bag: plastic_film
+  Single-use carrier bag: plastic_film
+  Polypropylene bag: plastic_film
+  Other plastic wrapper: plastic_film
+  Drink carton: beverage_carton
+  Drink can: metal_can
+  Food Can: metal_can
+  Corrugated carton: paper_cardboard
+  Other carton: paper_cardboard
+  Egg carton: paper_cardboard
+  Pizza box: paper_cardboard
+  Normal paper: paper_cardboard
+  Magazine paper: paper_cardboard
+  Wrapping paper: paper_cardboard
+  Paper bag: paper_cardboard
+
+annotations_url: https://raw.githubusercontent.com/pedropro/TACO/master/data/annotations.json
+max_side: 1280   # images are downscaled on conversion to save Drive space (labels are normalised)

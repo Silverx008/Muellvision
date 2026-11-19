@@ -1,0 +1,11 @@
+<!-- Label Studio labelling config. Label order must match configs/classes.yaml (YOLO export uses this order). -->
+<View>
+  <Image name="image" value="$image" zoom="true" zoomControl="true"/>
+  <RectangleLabels name="label" toName="image">
+    <Label value="pet_bottle" background="#1f77b4"/>
+    <Label value="plastic_film" background="#ff7f0e"/>
+    <Label value="beverage_carton" background="#2ca02c"/>
+    <Label value="metal_can" background="#d62728"/>
+    <Label value="paper_cardboard" background="#9467bd"/>
+  </RectangleLabels>
+</View>

@@ -1,0 +1,24 @@
+# Shared hyperparameters for every variant and fold. Change only during the tuning phase (fold 0), then freeze.
+epochs: 100
+patience: 20
+imgsz: 640
+batch: 16          # Colab T4: 16 works for n/s; use 8 for yolo26m if you run out of memory
+seed: 42
+deterministic: true
+optimizer: auto
+cos_lr: false
+close_mosaic: 10
+workers: 2         # Colab has 2 CPU cores; raise on the lab PC
+cache: false       # 'ram' speeds up the lab PC; keep false on Colab with large data
+plots: true
+# augmentation (Ultralytics defaults made explicit so tuning diffs are visible)
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+fliplr: 0.5
+flipud: 0.0
+mosaic: 1.0
+mixup: 0.0
