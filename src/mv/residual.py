@@ -82,5 +82,5 @@ def choose_tau(rows: list[dict], max_wrong: float = 0.05) -> dict:
     """Highest correct_rate with wrong_rate <= max_wrong; if none qualifies, the tau with the lowest wrong_rate."""
     ok = [r for r in rows if r["wrong_rate"] <= max_wrong and r["ejected"] > 0]
     if ok:
-        return max(ok, key=lambda r: (r["correct_rate"], -r["tau"]))
+        return max(ok, key=lambda r: (r["correct_rate"], r["tau"]))  # tie -> higher tau (purer Fraktion)
     return min(rows, key=lambda r: (r["wrong_rate"], -r["correct_rate"]))
