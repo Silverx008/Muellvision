@@ -1,0 +1,1 @@
+date,run,model,fold,split,cfg_hash,seed,epochs,imgsz,git_commit,ultralytics,device,P,R,mAP50,mAP50_95,infer_ms,notes

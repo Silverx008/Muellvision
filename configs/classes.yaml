@@ -1,0 +1,18 @@
+# Single source of truth for the trained classes. Order = YOLO class id. Do not reorder after M3.
+names:
+  0: pet_bottle
+  1: plastic_film
+  2: beverage_carton
+  3: metal_can
+  4: paper_cardboard
+
+# German Fraktion shown in the demo and used in the Doku.
+fraktion:
+  pet_bottle: PET-Flaschen
+  plastic_film: Kunststofffolien
+  beverage_carton: Getränkekartons
+  metal_can: Metall (Dosen)
+  paper_cardboard: Papier, Pappe, Kartonagen (PPK)
+
+# Residual is not a class: an object without a detection with conf >= tau becomes Sortierrest (mv.residual).
+residual: Sortierrest

@@ -1,0 +1,6 @@
+# The four variants compared in the cross-validation (concept table 6).
+variants:
+  yolo26n: {weights: yolo26n.pt}
+  yolo26s: {weights: yolo26s.pt}
+  yolo26m: {weights: yolo26m.pt}
+  yolo11n: {weights: yolo11n.pt}

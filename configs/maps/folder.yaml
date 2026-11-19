@@ -1,0 +1,19 @@
+# Maps the class folders of a local folder-per-class dataset (e.g. Muelvision_Dataset) to Müllvision classes.
+# These images have no bounding boxes. scripts/prelabel.py proposes boxes, a human reviews them in Label Studio.
+#
+#   candidates: classes the object in this folder can be (the pre-labeller may only pick from these)
+#   role: positive  -> object(s) of the candidate classes, boxes required
+#         negative  -> no trained class expected; after review the image keeps an empty label file
+#         skip      -> not ingested
+folders:
+  Cardboard:            {candidates: [paper_cardboard], role: positive}
+  Paper:                {candidates: [paper_cardboard], role: positive}
+  Metal:                {candidates: [metal_can], role: positive}        # also contains non-can metal: drop those in review
+  Plastic:              {candidates: [pet_bottle, plastic_film], role: positive}  # mixed, review decides per image
+  Miscellaneous Trash:  {candidates: [], role: negative}                 # review: anything that IS a trained class gets a box
+
+# Known public sources inside Muelvision_Dataset, recognised by file name pattern and image size.
+# Public data is training-only (never val/test), see docs/decisions.md.
+sources:
+  realwaste:  {pattern: '^[A-Z][A-Za-z ]+_\d+\.jpg$', size: [524, 524], licence: "CC BY 4.0 (RealWaste, UCI) - verify"}
+  trashnet:   {pattern: '^[a-z]+\d+\.jpg$',           size: [512, 384], licence: "MIT (TrashNet repo) - verify"}

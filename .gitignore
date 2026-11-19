@@ -1,0 +1,33 @@
+# Data, weights and run output never go into git (see CLAUDE.md)
+data/
+datasets/
+runs/
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.engine
+*_ncnn_model/
+*_saved_model/
+*_openvino_model/
+*.zip
+*.tar
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
